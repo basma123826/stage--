@@ -59,6 +59,7 @@ function HeroSection() {
       strokeLinecap="round"
     />
   </svg>
+  
         <p className="description" style={{fontSize:"20px",lineHeight:"1.7",marginTop:"24px",fontWeight:"400",color:"#7b7b93",maxWidth:"90%"}}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua  enim ad minim veniam, quis nostrud.
         </p>

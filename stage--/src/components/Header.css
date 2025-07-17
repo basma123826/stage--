@@ -1,4 +1,5 @@
- header {
+/* Base desktop styles */
+header {
   background-color: #20214f;
   padding: 20px 0;
 }
@@ -36,7 +37,7 @@
 }
 
 .nav a {
-text-decoration: none;
+  text-decoration: none;
   color: #333;
   font-size: 14px;
   position: relative;
@@ -65,5 +66,58 @@ text-decoration: none;
   padding: 8px 16px;
   font-weight: bold;
   cursor: pointer;
-  
 }
+
+/* Responsive styles */
+
+/* Large tablets and small desktops (up to 1024px) */
+@media screen and (max-width: 1024px) {
+  .header-container {
+    padding: 15px 20px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+}
+
+/* Tablets (up to 768px) */
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .contact-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+/* Mobile phones (up to 480px) */
+@media screen and (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+}
+

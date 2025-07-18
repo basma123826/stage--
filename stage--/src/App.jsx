@@ -13,5 +13,5 @@ const App = () => {
       <ExperienceSection/>
     </div>
   );
-}
+} 
 export default App;
